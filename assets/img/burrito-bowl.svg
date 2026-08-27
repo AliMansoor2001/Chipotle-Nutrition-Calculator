@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Burrito bowl with rice, beans and toppings">
+  <rect width="400" height="260" fill="#f5f8f6"/>
+  <path d="M100 120h200a100 100 0 0 1-200 0z" fill="#ffffff" stroke="#e4ebe7" stroke-width="4"/>
+  <path d="M104 120h96v52a52 52 0 0 1-96-52z" fill="#f3efe2"/>
+  <path d="M200 120h96a96 96 0 0 1-96 96z" fill="#7a4b2a"/>
+  <circle cx="150" cy="112" r="14" fill="#c9453b"/>
+  <circle cx="200" cy="106" r="16" fill="#e2b53f"/>
+  <circle cx="250" cy="112" r="14" fill="#4f8f3f"/>
+  <circle cx="176" cy="128" r="10" fill="#9dcf7c"/>
+  <circle cx="228" cy="128" r="10" fill="#f0f0f0"/>
+  <ellipse cx="200" cy="232" rx="110" ry="10" fill="#e4ebe7"/>
+</svg>

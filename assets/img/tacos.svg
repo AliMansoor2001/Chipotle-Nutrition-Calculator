@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Three soft tacos">
+  <rect width="400" height="260" fill="#f5f8f6"/>
+  <g>
+    <path d="M60 180a70 70 0 0 1 140 0z" fill="#e8c98d"/>
+    <path d="M74 176a56 56 0 0 1 112 0z" fill="#7a4b2a"/>
+    <path d="M80 166a50 50 0 0 1 100 0z" fill="#6cb86f"/>
+    <circle cx="110" cy="158" r="7" fill="#c9453b"/>
+    <circle cx="150" cy="154" r="7" fill="#e2b53f"/>
+  </g>
+  <g transform="translate(110 -18)">
+    <path d="M60 180a70 70 0 0 1 140 0z" fill="#eccf97"/>
+    <path d="M74 176a56 56 0 0 1 112 0z" fill="#8b5730"/>
+    <path d="M80 166a50 50 0 0 1 100 0z" fill="#7cc681"/>
+    <circle cx="112" cy="158" r="7" fill="#e2b53f"/>
+    <circle cx="152" cy="156" r="7" fill="#c9453b"/>
+  </g>
+  <ellipse cx="200" cy="212" rx="150" ry="10" fill="#e4ebe7"/>
+</svg>

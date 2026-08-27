@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Bowl of salad greens with toppings">
+  <rect width="400" height="260" fill="#f5f8f6"/>
+  <circle cx="160" cy="108" r="30" fill="#5aa35f"/>
+  <circle cx="205" cy="92" r="34" fill="#6cb86f"/>
+  <circle cx="248" cy="110" r="28" fill="#4f9455"/>
+  <circle cx="182" cy="126" r="24" fill="#7cc681"/>
+  <circle cx="228" cy="128" r="22" fill="#5aa35f"/>
+  <circle cx="186" cy="100" r="9" fill="#c9453b"/>
+  <circle cx="242" cy="96" r="8" fill="#e2b53f"/>
+  <circle cx="212" cy="124" r="8" fill="#c9453b"/>
+  <path d="M100 130h200a100 100 0 0 1-200 0z" fill="#ffffff" stroke="#e4ebe7" stroke-width="4"/>
+  <ellipse cx="200" cy="238" rx="108" ry="10" fill="#e4ebe7"/>
+</svg>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chipotle Burrito Nutrition Calculator | Calories, Protein, Carbs &amp; Fat</title>
+<meta name="description" content="Custom Chipotle Burrito Nutrition Calculator. Select your flour tortilla, chicken, steak, barbacoa, rice, beans, salsas, cheese, guac and queso to calculate exact nutrition.">
+<link rel="icon" href="../assets/img/images.jpg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/calculator.css">
+<script src="../assets/js/nutrition-data.js" defer></script>
+<script src="../assets/js/calculator.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <div class="brand-icon-wrap">
+        <img src="../assets/img/images.jpg" alt="Chipotle Nutrition Calculator logo" width="28" height="28">
+      </div>
+      <span class="brand-name">Chipotle Nutrition Calculator</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#menu">Menu</a></li>
+          <li><a href="../index.html#how-it-works">How It Works</a></li>
+          <li><a href="../index.html#faqs">FAQs</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="meal-switcher-bar" aria-label="Switch Menu Calculator">
+  <div class="container">
+    <ul class="meal-switcher-list">
+      <li><a href="burrito.html" class="meal-switcher-link is-active" aria-current="page">🌯 Burrito</a></li>
+      <li><a href="burrito-bowl.html" class="meal-switcher-link">🥗 Burrito Bowl</a></li>
+      <li><a href="quesadilla.html" class="meal-switcher-link">🧀 Quesadilla</a></li>
+      <li><a href="salad.html" class="meal-switcher-link">🥬 Salad</a></li>
+      <li><a href="tacos.html" class="meal-switcher-link">🌮 Tacos</a></li>
+      <li><a href="kids-meal.html" class="meal-switcher-link">🧒 Kid's Meal</a></li>
+      <li><a href="chips-and-sides.html" class="meal-switcher-link">🥑 Chips &amp; Sides</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main" data-menu-key="burrito">
+
+  <section class="calc-hero">
+    <div class="container calc-hero-inner">
+      <div class="calc-hero-text">
+        <span class="calc-badge">Classic Foil-Wrapped</span>
+        <h1>Burrito Nutrition Calculator</h1>
+        <p class="hero-sub">
+          Build your custom Chipotle burrito with our interactive calculator. Select your tortilla, protein, rice, beans, salsas, and toppings to calculate exact calories, macros, and sodium instantly.
+        </p>
+      </div>
+      <img class="calc-hero-img" src="../assets/img/burrito.jpg" alt="Realistic photo of a foil-wrapped burrito" width="140" height="140">
+    </div>
+  </section>
+
+  <div class="container calc-layout">
+    <!-- Left: Ingredient Selection by Categories -->
+    <div class="calc-main-area">
+      <div id="ingredientCategories">
+        <!-- Dynamically rendered by calculator.js from ChipotleData -->
+      </div>
+    </div>
+
+    <!-- Right: Sticky Live Nutrition Summary Sidebar -->
+    <aside class="calc-sidebar">
+      <div class="nutrition-panel" id="nutritionSummaryPanel">
+        <div class="nutrition-panel-header">
+          <h2>Nutrition Facts</h2>
+          <button type="button" class="btn-clear" id="clearAllBtn" title="Clear all selections">Clear All</button>
+        </div>
+
+        <div class="calorie-box">
+          <span class="calorie-label">Total Calories</span>
+          <span class="calorie-value" id="statCalories">0</span>
+        </div>
+
+        <!-- 3 Primary Macros -->
+        <div class="macro-grid">
+          <div class="macro-card macro-card-protein">
+            <span class="macro-card-title">Protein</span>
+            <span class="macro-card-value" id="statProtein">0g</span>
+          </div>
+          <div class="macro-card macro-card-carbs">
+            <span class="macro-card-title">Carbs</span>
+            <span class="macro-card-value" id="statCarbs">0g</span>
+          </div>
+          <div class="macro-card macro-card-fat">
+            <span class="macro-card-title">Total Fat</span>
+            <span class="macro-card-value" id="statFat">0g</span>
+          </div>
+        </div>
+
+        <!-- Additional Micronutrients -->
+        <div class="micro-grid">
+          <div class="micro-card">
+            <span class="micro-card-title">Fiber</span>
+            <span class="micro-card-value" id="statFiber">0g</span>
+          </div>
+          <div class="micro-card">
+            <span class="micro-card-title">Sugar</span>
+            <span class="micro-card-value" id="statSugar">0g</span>
+          </div>
+          <div class="micro-card">
+            <span class="micro-card-title">Sodium</span>
+            <span class="micro-card-value" id="statSodium">0mg</span>
+          </div>
+        </div>
+
+        <!-- Calorie Distribution Bar -->
+        <div class="macro-dist-section">
+          <div class="macro-dist-header">
+            <span>Calorie Breakdown</span>
+          </div>
+          <div class="macro-dist-bar" role="progressbar" aria-label="Macro breakdown percentage">
+            <div class="macro-bar-segment segment-protein" id="macroBarProtein" style="width: 0%"></div>
+            <div class="macro-bar-segment segment-carbs" id="macroBarCarbs" style="width: 0%"></div>
+            <div class="macro-bar-segment segment-fat" id="macroBarFat" style="width: 0%"></div>
+          </div>
+          <div class="macro-dist-legend">
+            <span class="legend-item"><span class="legend-dot dot-protein"></span> Pro <strong id="macroPctProtein">0%</strong></span>
+            <span class="legend-item"><span class="legend-dot dot-carbs"></span> Carb <strong id="macroPctCarbs">0%</strong></span>
+            <span class="legend-item"><span class="legend-dot dot-fat"></span> Fat <strong id="macroPctFat">0%</strong></span>
+          </div>
+        </div>
+
+        <!-- Selected Items Chips List -->
+        <div class="selected-chips-box">
+          <div class="selected-chips-header">
+            <span>Selected Ingredients</span>
+            <span id="selectedCountBadge">0 items</span>
+          </div>
+          <div class="selected-chips-container" id="selectedChipsContainer">
+            <span class="empty-chips-text">No ingredients selected yet. Click options on the left to build your burrito!</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Detailed Nutrition Breakdown Table -->
+  <section class="breakdown-section" id="breakdownSection">
+    <div class="container">
+      <h2>Itemized Nutrition Breakdown</h2>
+      <p class="section-sub">Detailed nutritional contribution for each selected ingredient in your burrito.</p>
+
+      <div class="table-responsive">
+        <table class="breakdown-table" aria-label="Itemized nutrition details">
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Serving Size</th>
+              <th class="th-num">Calories</th>
+              <th class="th-num">Protein</th>
+              <th class="th-num">Carbs</th>
+              <th class="th-num">Fat</th>
+              <th class="th-num">Fiber</th>
+              <th class="th-num">Sugar</th>
+              <th class="th-num">Sodium</th>
+              <th aria-label="Actions"></th>
+            </tr>
+          </thead>
+          <tbody id="breakdownTableBody">
+            <!-- Populated dynamically -->
+          </tbody>
+        </table>
+        <div class="breakdown-empty-msg" id="breakdownEmptyMsg">
+          No ingredients selected yet. Select items from the list above to view the itemized breakdown.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Floating Quick Summary Bar -->
+  <div class="mobile-floating-bar" aria-label="Mobile quick nutrition summary">
+    <div class="mobile-floating-bar-inner">
+      <div class="mobile-stats">
+        <div class="mobile-cal-pill"><span id="mobileBarCalories">0</span> cal</div>
+        <div class="mobile-macro-pills">
+          <span>P: <strong id="mobileBarProtein">0g</strong></span>
+          <span>C: <strong id="mobileBarCarbs">0g</strong></span>
+          <span>F: <strong id="mobileBarFat">0g</strong></span>
+        </div>
+      </div>
+      <div class="mobile-actions">
+        <button type="button" class="btn-clear" id="clearAllBtnMobile">Clear</button>
+        <a href="#breakdownSection" class="btn btn-primary" style="padding: .45rem .85rem; font-size: .8125rem;">Details</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/logo.svg" alt="" width="32" height="32">
+        <span class="brand-name">Chipotle Nutrition Calculator</span>
+      </a>
+      <p>
+        A free, independent nutrition calculator for build-your-own Mexican-style meals.
+        Customize your order and see calories, protein, carbs, fat, fiber, sugar and sodium instantly.
+      </p>
+    </div>
+
+    <nav class="footer-col" aria-labelledby="footer-menu-title">
+      <h2 id="footer-menu-title" class="footer-title">Menu Calculators</h2>
+      <ul>
+        <li><a href="burrito.html">Burrito</a></li>
+        <li><a href="burrito-bowl.html">Burrito Bowl</a></li>
+        <li><a href="quesadilla.html">Quesadilla</a></li>
+        <li><a href="salad.html">Salad</a></li>
+        <li><a href="tacos.html">Tacos</a></li>
+        <li><a href="kids-meal.html">Kid's Meal</a></li>
+        <li><a href="chips-and-sides.html">Chips &amp; Sides</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-labelledby="footer-site-title">
+      <h2 id="footer-site-title" class="footer-title">Site</h2>
+      <ul>
+        <li><a href="../index.html#faqs">FAQ</a></li>
+        <li><a href="../index.html#disclaimer">Disclaimer</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Chipotle Nutrition Calculator. Independent site — not affiliated with Chipotle Mexican Grill, Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>

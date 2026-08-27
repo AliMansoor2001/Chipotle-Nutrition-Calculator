@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Kid's meal box with a small taco and a drink">
+  <rect width="400" height="260" fill="#f5f8f6"/>
+  <path d="M110 120h130v90H110z" fill="#f0a94a"/>
+  <path d="M110 120h130l14-26H124z" fill="#f7bd6d"/>
+  <rect x="132" y="146" width="86" height="40" rx="8" fill="#ffffff" opacity=".65"/>
+  <g transform="translate(122 78) scale(.55)">
+    <path d="M0 60a60 60 0 0 1 120 0z" fill="#e8c98d"/>
+    <path d="M12 56a48 48 0 0 1 96 0z" fill="#6cb86f"/>
+  </g>
+  <g transform="translate(258 108)">
+    <path d="M4 0h58l-8 100H12z" fill="#ffffff" stroke="#e4ebe7" stroke-width="4"/>
+    <rect x="0" y="-8" width="66" height="12" rx="6" fill="#c9453b"/>
+    <rect x="40" y="-46" width="7" height="44" rx="3.5" fill="#c9453b" transform="rotate(12 43 -24)"/>
+  </g>
+  <ellipse cx="200" cy="222" rx="140" ry="10" fill="#e4ebe7"/>
+</svg>

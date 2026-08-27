@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chipotle Nutrition Calculator | Calories, Protein, Carbs &amp; More</title>
+<meta name="description" content="Free Chipotle nutrition calculator. Build a burrito, bowl, quesadilla, salad or tacos and instantly see calories, protein, carbs, fat, fiber, sugar and sodium.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#">
+      <div class="brand-icon-wrap">
+        <img src="assets/img/images.jpg" alt="Chipotle Nutrition Calculator logo" width="38" height="38">
+      </div>
+      <span class="brand-name">Chipotle Nutrition Calculator</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="hero-badge">🥗 Free &amp; Interactive Calculator</span>
+      <h1>Chipotle <span class="hero-highlight">Nutrition Calculator</span></h1>
+      <p class="hero-sub">
+        Build your meal the way you actually order it and instantly see the numbers that matter:
+        calories, protein, carbs, fat, fiber, sugar, and sodium — ingredient by ingredient.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#menu">Explore Menu &amp; Calculate &rarr;</a>
+        <a class="btn btn-outline" href="#how-it-works">How It Works</a>
+      </div>
+
+      <ul class="hero-highlights-list" aria-label="Calculator features">
+        <li class="hero-highlight-pill">⚡ Instant Live Totals</li>
+        <li class="hero-highlight-pill">🥑 Exact Serving Sizes</li>
+        <li class="hero-highlight-pill">🌯 7 Complete Menu Categories</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Calculators</span>
+        <h2 id="menu-title">Explore the Menu</h2>
+        <p class="section-sub">Pick any Chipotle menu item below to start customizing ingredients and calculating exact nutrition.</p>
+      </div>
+
+      <ul class="card-grid">
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/burrito.jpg" alt="Realistic photo of a foil-wrapped Chipotle burrito cut in half" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Burrito</h3>
+            <p class="card-desc">Foil-wrapped flour tortilla filled with your choice of protein, rice, beans, salsas, and toppings.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/burrito.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/burrito-bowl.jpg" alt="Realistic photo of a Chipotle burrito bowl with rice, beans, chicken and guac" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Burrito Bowl</h3>
+            <p class="card-desc">The fan favorite. Build your bowl with fresh rice, beans, grilled meat, salsas, queso, and guac.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/burrito-bowl.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/quesadilla.jpg" alt="Realistic photo of a golden toasted cheese quesadilla with dipping sides" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Quesadilla</h3>
+            <p class="card-desc">Warm pressed flour tortilla filled with Monterey Jack cheese, protein, fajitas, and 3 dipping sides.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/quesadilla.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/salad.jpg" alt="Realistic photo of a fresh Chipotle salad with chicken, beans, and vinaigrette" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Salad</h3>
+            <p class="card-desc">Crisp romaine lettuce base with lean meats, beans, fajita veggies, and Chipotle-Honey Vinaigrette.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/salad.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/tacos.jpg" alt="Realistic photo of three Chipotle tacos with steak, cheese, and salsa" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Tacos</h3>
+            <p class="card-desc">Custom tacos in soft flour or crispy corn tortillas with protein, rice, beans, salsas, and cheese.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/tacos.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/kids-meal.jpg" alt="Realistic photo of a Chipotle kid's meal build-your-own combo" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Kid's Meal</h3>
+            <p class="card-desc">Build Your Own kid-sized meal with small tortillas, protein, rice, beans, cheese, and sides.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/kids-meal.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-img-wrap">
+            <img src="assets/img/chips-and-sides.jpg" alt="Realistic photo of crispy tortilla chips with guacamole, queso, and salsa" width="400" height="260" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Chips &amp; Sides</h3>
+            <p class="card-desc">Crispy tortilla chips, fresh hand-mashed guacamole, creamy Queso Blanco, and signature salsas.</p>
+            <div class="card-footer">
+              <a class="btn btn-outline" href="menu/chips-and-sides.html">Calculate Nutrition &rarr;</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section section-alt" id="how-it-works" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple &amp; Fast</span>
+        <h2 id="how-title">How It Works</h2>
+        <p class="section-sub">Three simple steps — no sign-up, no app downloads, no math required.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Choose a Menu Item</h3>
+          <p>Start with a burrito, bowl, quesadilla, salad, tacos, kid's meal, or chips and sides.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Customize Ingredients</h3>
+          <p>Add your rice, beans, protein, salsas, cheese, guac, and extras exactly as you order them.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Get Live Totals</h3>
+          <p>Instantly see calories, protein, carbs, fat, fiber, sugar, sodium, and macro distribution ratios.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="section" id="faqs" aria-labelledby="faq-title">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <p class="section-sub">Everything you need to know about our Chipotle nutrition estimates and calculations.</p>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq1">
+              <span>Is this the official Chipotle website?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq1" hidden>
+            <p>No. This is an independent, fan-made tool. We are not affiliated with, endorsed by, or sponsored by Chipotle Mexican Grill, Inc.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq2">
+              <span>How accurate are the nutrition numbers?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq2" hidden>
+            <p>Values are estimates based on publicly available nutrition information and standard serving sizes. Real portions are scooped by hand in restaurants, so actual values can vary.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq3">
+              <span>Which nutrients does the calculator show?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq3" hidden>
+            <p>Calories, protein, carbohydrates, total fat, dietary fiber, total sugar, and sodium for the whole meal as well as itemized per ingredient.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq4">
+              <span>Do I need to create an account?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq4" hidden>
+            <p>No. The calculator is 100% free and runs entirely in your web browser — no registration, passwords, or personal data required.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq5">
+              <span>Can I track specific ingredients individually?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq5" hidden>
+            <p>Yes. Each ingredient card displays its individual calories and macro tags, and the detailed breakdown table lists each selected item line-by-line.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq6">
+              <span>Does it cover vegetarian and vegan options?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq6" hidden>
+            <p>Yes. Plant-based proteins (Sofritas), black and pinto beans, brown and white rice, fajita veggies, guacamole, and fresh salsas are all included.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq7">
+              <span>Are allergens listed?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq7" hidden>
+            <p>Not yet. For allergy-critical dietary decisions, please always check with restaurant staff or official Chipotle allergen documentation.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq8">
+              <span>How often is the data updated?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq8" hidden>
+            <p>We review the nutrition dataset periodically and refresh values whenever official menu items or published nutritional data change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer Section -->
+  <section class="section section-alt" id="disclaimer" aria-labelledby="disclaimer-title">
+    <div class="container container-narrow">
+      <div class="section-header" style="margin-bottom: 1.5rem;">
+        <span class="section-tag">Important Notice</span>
+        <h2 id="disclaimer-title">Disclaimer</h2>
+      </div>
+      <p>
+        Chipotle Nutrition Calculator is an independent, community-driven tool and is not affiliated with, endorsed by, or
+        sponsored by Chipotle Mexican Grill, Inc. All trademarks and brand names belong to their respective owners.
+        Nutrition values are estimates for general health and informational purposes only and do not constitute medical or dietary advice.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container container-narrow">
+      <div class="contact-box">
+        <span class="section-tag">Get in Touch</span>
+        <h2 id="contact-title">Have Questions or Suggestions?</h2>
+        <p>Spotted an incorrect value or want a new menu item added? We would love to hear your feedback.</p>
+        <div>
+          <a class="contact-email-pill" href="mailto:alimansoorqadirghumro@gmail.com">alimansoorqadirghumro@gmail.com</a>
+        </div>
+        <a class="btn btn-primary" href="mailto:alimansoorqadirghumro@gmail.com">Send Us a Message</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a class="brand" href="/">
+        <div class="brand-icon-wrap">
+          <img src="assets/img/logo.svg" alt="" width="24" height="24">
+        </div>
+        <span class="brand-name">Chipotle Nutrition Calculator</span>
+      </a>
+      <p>
+        A free, independent nutrition calculator for customizable Mexican-style meals.
+        Build your order and calculate calories, protein, carbs, fat, fiber, sugar, and sodium instantly.
+      </p>
+    </div>
+
+    <nav class="footer-col" aria-labelledby="footer-menu-title">
+      <h2 id="footer-menu-title" class="footer-title">Menu Calculators</h2>
+      <ul>
+        <li><a href="menu/burrito.html">Burrito</a></li>
+        <li><a href="menu/burrito-bowl.html">Burrito Bowl</a></li>
+        <li><a href="menu/quesadilla.html">Quesadilla</a></li>
+        <li><a href="menu/salad.html">Salad</a></li>
+        <li><a href="menu/tacos.html">Tacos</a></li>
+        <li><a href="menu/kids-meal.html">Kid's Meal</a></li>
+        <li><a href="menu/chips-and-sides.html">Chips &amp; Sides</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-labelledby="footer-site-title">
+      <h2 id="footer-site-title" class="footer-title">Quick Links</h2>
+      <ul>
+        <li><a href="#menu">Explore Menu</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#faqs">FAQ</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Chipotle Nutrition Calculator. Independent site &mdash; not affiliated with Chipotle Mexican Grill, Inc.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

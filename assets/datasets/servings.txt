@@ -1,0 +1,26 @@
+| Ingredient                  | Serving | Calories | Protein (g) | Carbs (g) | Fat (g) | Fiber (g) | Sugar (g) | Sodium (mg) |
+| --------------------------- | ------- | -------: | ----------: | --------: | ------: | --------: | --------: | ----------: |
+| Chicken                     | 4 oz    |      180 |          32 |         0 |       7 |         0 |         0 |         310 |
+| Steak                       | 4 oz    |      150 |          21 |         1 |       6 |         1 |         0 |         330 |
+| Barbacoa                    | 4 oz    |      170 |          24 |         2 |       7 |         1 |         0 |         530 |
+| Carnitas                    | 4 oz    |      210 |          23 |         0 |      12 |         0 |         0 |         450 |
+| Sofritas                    | 4 oz    |      150 |           8 |         9 |      10 |         3 |         5 |         560 |
+| White Rice                  | 4 oz    |      210 |           4 |        40 |       4 |         1 |         0 |         350 |
+| Brown Rice                  | 4 oz    |      210 |           4 |        36 |       6 |         2 |         0 |         190 |
+| Black Beans                 | 4 oz    |      130 |           8 |        22 |     1.5 |         7 |         2 |         210 |
+| Pinto Beans                 | 4 oz    |      130 |           8 |        21 |     1.5 |         8 |         1 |         210 |
+| Fajita Vegetables           | 3.5 oz  |       20 |           1 |         5 |       0 |         1 |         2 |         150 |
+| Fresh Tomato Salsa          | 3.5 oz  |       25 |           0 |         4 |       0 |         1 |         1 |         550 |
+| Roasted Chili-Corn Salsa    | 3.5 oz  |       80 |           3 |        16 |     1.5 |         3 |         4 |         330 |
+| Tomatillo Green-Chili Salsa | 3.5 oz  |       15 |           0 |         4 |       0 |         0 |         2 |         260 |
+| Tomatillo Red-Chili Salsa   | 3.5 oz  |       30 |           0 |         4 |       0 |         1 |         0 |         500 |
+| Sour Cream                  | 2 oz    |      110 |           2 |         2 |       9 |         0 |         2 |          30 |
+| Cheese                      | 1 oz    |      110 |           6 |         1 |       8 |         0 |         0 |         190 |
+| Guacamole                   | 4 oz    |      230 |           2 |         8 |      22 |         6 |         1 |         370 |
+| Queso Blanco                | 2 oz    |      120 |           5 |         4 |       9 |         0 |         1 |         250 |
+| Romaine Lettuce             | 1.5 oz  |        5 |           0 |         1 |       0 |         1 |         0 |           0 |
+| Flour Tortilla – Burrito    | 4.2 oz  |      320 |           8 |        50 |       9 |         3 |         0 |         600 |
+| Flour Tortilla – Taco       | 1.1 oz  |       80 |           2 |        13 |     2.5 |        <1 |         0 |         160 |
+| Crispy Corn Tortilla        | 1 each  |       70 |           1 |        10 |       3 |         1 |         0 |           0 |
+| Chips                       | 4 oz    |      540 |           7 |        73 |      25 |         7 |         1 |         390 |
+| Chipotle-Honey Vinaigrette  | 2 oz    |      220 |           1 |        18 |      16 |         1 |        12 |         850 |

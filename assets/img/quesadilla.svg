@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="Cheese quesadilla cut into wedges">
+  <rect width="400" height="260" fill="#f5f8f6"/>
+  <g transform="translate(200 130)">
+    <path d="M0 0 L-8 -96 A96 96 0 0 0 -96 -8 Z" fill="#e8c98d" transform="translate(-6 -6)"/>
+    <path d="M0 0 L8 -96 A96 96 0 0 1 96 -8 Z" fill="#eccf97" transform="translate(6 -6)"/>
+    <path d="M0 0 L96 8 A96 96 0 0 1 8 96 Z" fill="#e3c184" transform="translate(6 6)"/>
+    <path d="M0 0 L-96 8 A96 96 0 0 0 -8 96 Z" fill="#efd6a3" transform="translate(-6 6)"/>
+    <circle cx="-40" cy="-44" r="7" fill="#d3a862"/>
+    <circle cx="42" cy="-38" r="6" fill="#d3a862"/>
+    <circle cx="36" cy="46" r="7" fill="#d3a862"/>
+    <circle cx="-44" cy="40" r="6" fill="#d3a862"/>
+    <path d="M-4 -2c-14 6-22 12-26 20" stroke="#f2b93c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
