@@ -809,6 +809,22 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .header-inner {
+    gap: 1rem;
+  }
+
+  .brand {
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .nav-toggle {
     display: block;
   }
