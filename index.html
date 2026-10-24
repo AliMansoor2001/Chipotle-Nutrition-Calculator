@@ -45,23 +45,28 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-inner">
-      <span class="hero-badge">🥗 Free &amp; Interactive Calculator</span>
-      <h1>Chipotle <span class="hero-highlight">Nutrition Calculator</span></h1>
-      <p class="hero-sub">
-        Build your meal the way you actually order it and instantly see the numbers that matter:
-        calories, protein, carbs, fat, fiber, sugar, and sodium — ingredient by ingredient.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#menu">Explore Menu &amp; Calculate &rarr;</a>
-        <a class="btn btn-outline" href="#how-it-works">How It Works</a>
-      </div>
+      <div class="hero-copy">
+        <span class="hero-badge">🥗 Free &amp; Interactive Calculator</span>
+        <h1>Chipotle <span class="hero-highlight">Nutrition Calculator</span></h1>
+        <p class="hero-sub">
+          Build your meal the way you actually order it and instantly see the numbers that matter:
+          calories, protein, carbs, fat, fiber, sugar, and sodium — ingredient by ingredient.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Menu &amp; Calculate &rarr;</a>
+          <a class="btn btn-outline" href="#how-it-works">How It Works</a>
+        </div>
 
-      <ul class="hero-highlights-list" aria-label="Calculator features">
-        <li class="hero-highlight-pill">⚡ Instant Live Totals</li>
-        <li class="hero-highlight-pill">🥑 Standard Serving Sizes</li>
-        <li class="hero-highlight-pill">🌯 7 Complete Menu Categories</li>
-      </ul>
+        <ul class="hero-highlights-list" aria-label="Calculator features">
+          <li class="hero-highlight-pill">⚡ Instant Live Totals</li>
+          <li class="hero-highlight-pill">🥑 Standard Serving Sizes</li>
+          <li class="hero-highlight-pill">🌯 7 Complete Menu Categories</li>
+        </ul>
+      </div>
     </div>
+    <video class="hero-video" autoplay loop muted playsinline preload="metadata" aria-label="Chipotle-inspired food video">
+      <source src="assets/hero-bg.mp4" type="video/mp4">
+    </video>
   </section>
 
   <!-- Menu Section -->
@@ -194,6 +199,108 @@
           <p>Instantly see calories, protein, carbs, fat, fiber, sugar, sodium, and macro distribution ratios.</p>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Diet-Specific Ordering Guide Section -->
+  <section class="section" id="diet-specific-guide" aria-labelledby="diet-specific-guide-title">
+    <div class="container">
+      <div class="section-header diet-guide-header">
+        <h2 id="diet-specific-guide-title">What Should You Order for Your Specific Diet?</h2>
+        <p class="section-sub">Everyone has different nutritional goals. Whether you want more protein, fewer calories, or plant-based options, the ingredients and portions you choose can change the nutrition of your Chipotle meal. Use our calculator to compare combinations and find options that fit your preferences.</p>
+      </div>
+
+      <!-- Photographs from Unsplash, used under https://unsplash.com/license. -->
+      <ul class="diet-guide-grid" aria-label="Diet-specific meal options">
+        <li class="card diet-guide-card">
+          <div class="card-img-wrap diet-guide-image">
+            <img src="assets/img/diet-higher-protein.jpg" alt="Overhead bowl with golden cubes, eggs, edamame, corn, and mixed vegetables" width="900" height="563" loading="lazy">
+          </div>
+          <div class="card-body diet-guide-card-body">
+            <h3>Higher-Protein Options</h3>
+            <p class="card-desc">Compare the protein choices available in the calculator and check how each affects your meal's total protein, calories, and fat. Consider the entire meal rather than protein alone.</p>
+          </div>
+        </li>
+
+        <li class="card diet-guide-card">
+          <div class="card-img-wrap diet-guide-image">
+            <img src="assets/img/diet-lower-calorie.jpg" alt="Overhead bowl of leafy greens, egg, avocado, radish, and fresh vegetables" width="900" height="563" loading="lazy">
+          </div>
+          <div class="card-body diet-guide-card-body">
+            <h3>Lower-Calorie Options</h3>
+            <p class="card-desc">Experiment with different portions, toppings, and extras to see how your meal's total calories change. Compare combinations while keeping ingredients you enjoy.</p>
+          </div>
+        </li>
+
+        <li class="card diet-guide-card">
+          <div class="card-img-wrap diet-guide-image">
+            <img src="assets/img/diet-plant-based.jpg" alt="Vegetarian bowl with chickpeas, leafy greens, tomatoes, radish, avocado, and roasted vegetables" width="900" height="563" loading="lazy">
+          </div>
+          <div class="card-body diet-guide-card-body">
+            <h3>Vegetarian and Plant-Based Options</h3>
+            <p class="card-desc">Explore suitable beans, vegetables, rice, salsas, and other ingredients. Check individual nutrition details and verify ingredients against your dietary requirements.</p>
+          </div>
+        </li>
+
+        <li class="card diet-guide-card">
+          <div class="card-img-wrap diet-guide-image">
+            <img src="assets/img/diet-lower-carbohydrate.jpg" alt="Bowl with salmon, green beans, tomatoes, and cauliflower rice" width="900" height="563" loading="lazy">
+          </div>
+          <div class="card-body diet-guide-card-body">
+            <h3>Lower-Carbohydrate Options</h3>
+            <p class="card-desc">Compare the carbohydrate contributions of rice, beans, tortillas, and other ingredients. Review total carbohydrates and fiber to understand how each combination changes your meal.</p>
+          </div>
+        </li>
+
+        <li class="card diet-guide-card">
+          <div class="card-img-wrap diet-guide-image">
+            <img src="assets/img/diet-sodium-conscious.jpg" alt="Fresh vegetable salad with tomatoes, carrots, greens, and cucumber" width="900" height="563" loading="lazy">
+          </div>
+          <div class="card-body diet-guide-card-body">
+            <h3>Sodium-Conscious Choices</h3>
+            <p class="card-desc">Check the sodium content of your chosen ingredients and the overall meal. Different proteins, sauces, toppings, and portions can affect the final total.</p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="diet-guide-closing"><strong>Build your own combination:</strong> Use the <a href="#menu">Chipotle Nutrition Calculator</a> to see how your ingredient choices affect calories, protein, carbohydrates, fat, fiber, sugar, and sodium.</p>
+      <p class="diet-guide-disclaimer">Nutrition values and menu availability may change. Check current official information when making dietary decisions.</p>
+    </div>
+  </section>
+
+  <!-- Official Nutrition Guide Section -->
+  <section class="section nutrition-guide" id="nutrition-guide" aria-labelledby="nutrition-guide-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Official Resource</span>
+        <h2 id="nutrition-guide-title">Chipotle Nutrition Guide</h2>
+        <p class="section-sub">
+          Want to explore the complete nutrition information for Chipotle menu items? View the official nutrition guide below or download it for later. Use it to review Chipotle nutrition facts, calories, and menu nutrition details.
+        </p>
+      </div>
+
+      <div class="nutrition-guide-viewer">
+        <iframe
+          src="assets/docs/chipotle-nutrition-guide-2025.pdf#view=Fit"
+          title="Official Chipotle nutrition guide PDF"
+          loading="lazy"
+          allow="fullscreen"
+        >
+          <p>Your browser can't display the PDF inline. <a href="assets/docs/chipotle-nutrition-guide-2025.pdf">Open the Chipotle nutrition guide PDF</a>.</p>
+        </iframe>
+      </div>
+
+      <div class="nutrition-guide-actions">
+        <a
+          class="btn btn-primary"
+          href="https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Download Nutrition Guide</a>
+        <p class="nutrition-guide-source">
+          Source: Chipotle Mexican Grill. Nutrition information may change. Please refer to Chipotle's official nutrition information for the latest details.
+        </p>
+      </div>
     </div>
   </section>
 
